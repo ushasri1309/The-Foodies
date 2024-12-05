@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Foodies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "corbel", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.shutterstock.com/image-photo/chicken-manchurian-bowl-black-concrete-600nw-1498639790.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-orange w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 9am to 12pm</span>
+  </div>
+  <div class="w3-display-right w3-corner">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">The<br>Foodies</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>The<br>Foodies</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-red">Let me see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-brown w3-grayscale w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-orange">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starters');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Biryani');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Biryani</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Noodles');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Noodles</div>
+      </a>
+    </div>
+
+    <div id="Starters" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Veg</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹250.00</span></h1>
+      <p class="w3-text-grey">veg lolipop,mushroom tikka,paneer tikka,gobi manchurian</p>
+      <hr>
+   
+      <h1><b>Nonveg</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹350.00</span></h1>
+      <p class="w3-text-grey">chilli chiken,butter chicken,mutton 65,peri peri chicken</p>
+      <hr>
+      
+      <h1><b>veg-soups</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹150.00</span></h1>
+      <p class="w3-text-grey">sweetcorn soup,hot & sour soup,mushroom soup</p>
+      <hr>
+
+      <h1><b>nonveg-soup</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹250.00</span></h1>
+      <p class="w3-text-grey">chicken soup,mutton soup,chicken corn soup,chicken dragon soup</p>
+      <hr>
+
+      <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-red w3-round">₹400.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+      <hr>
+
+      <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-red w3-round">₹450.00</span></h1>
+      <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <div id="Biryani" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>veg</b> <span class="w3-tag w3-red w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-red w3-round">₹350.00</span></h1>
+      <p class="w3-text-grey">paneer,mushroom,veg dum biryani,manchurian,gobi</p>
+      <hr>
+   
+      <h1><b>nonveg</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹450.00</span></h1>
+      <p class="w3-text-grey">boneless-chicken,kalmi,mutton,prawns,crab,egg</p>
+      <hr>
+      
+      <h1><b>pulao</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹400.00</span></h1>
+      <p class="w3-text-grey">chicken,mutton,paneer,mushroom</p>
+      <hr>
+
+      <h1><b>Seafood</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹375.00</span></h1>
+      <p class="w3-text-grey">fish fry,fish tikka,prawns fry,crab curry</p>
+    </div>
+
+
+    <div id="Noodles" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>resturant-special</b> <span class="w3-tag w3-red w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-red w3-round">₹200.00</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Veg-noodles</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹150.00</span></h1>
+      <p class="w3-text-grey">vegtable,paneer,chilli garlic,manchiran,mushroom</p>
+      <hr>
+      
+      <h1><b>Nonveg-noodles</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹250.00</span></h1>
+      <p class="w3-text-grey">ramens,chicken,egg,double-egg</p>
+      <hr>
+      
+      <h1><b>Special-noodles</b> <span class="w3-right w3-tag w3-dark-red w3-round">₹275.00</span></h1>
+      <p class="w3-text-grey">ichiraku,korean,chinese</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The Foodies Restaurant was founded in Benguluru in the year of 2007.Which was founded by two friends named Usha sri and Rajitha.</p>
+    <p><strong>The Chef?</strong> Ms.Deva shree and Ms.Deepika<img src="C:\Users\Student\Downloads\chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our interiors.</p>
+    <img src="C:\Users\Student\Downloads\restaurant.jfif" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue 11.00 - 10.00</p>
+        <p>Wednesday 10.00 - 12.00</p>
+        <p>Thursday 10:00 - 1:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 9:00 - 12:00</p>
+        <p>Saturday 10:00 - 11:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find us at some address at some place or call us at 9299916362</p>
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+    <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+    <img src="C:\Users\Student\Downloads\contact.jpg" style="width:70%" class="w3-margin-top w3-margin-bottom" alt="Contact">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="USRA.DD" target="_blank" class="w3-hover-text-green">USRA.DD</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
